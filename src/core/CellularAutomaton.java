@@ -7,7 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Scanner;
 
-
 import javafx.geometry.Point3D;
 
 public class CellularAutomaton {
@@ -231,7 +230,9 @@ public class CellularAutomaton {
 			System.out.println("Creating simulation");
 			//cell.solve(new Rule2());
 			//cell.solve(new Rule3());
-			cell.solve(new RuleOfLife());
+			//cell.solve(new RuleOfLife());
+			cell.solve(new Rule3D3());
+			//cell.solve(new Rule3D2());
 			System.out.println("Simulation done");
 			cell.getAnimationFile();
 		}
@@ -240,7 +241,6 @@ public class CellularAutomaton {
     }
 
 }
-
 /*
 	//Regla 1: Juego de la vida (2D y 3D)
 
