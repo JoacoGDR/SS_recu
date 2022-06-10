@@ -229,7 +229,7 @@ public class CellularAutomaton {
 		for(Integer p : percentages) {
 			CellularAutomaton cell = new CellularAutomaton("static" + p, "dynamic" + p);
 			System.out.println("Creating simulation");
-			cell.solve(new Rule2());
+			cell.solve(new RuleOfLife());
 			System.out.println("Simulation done");
 			cell.getAnimationFile();
 		}
@@ -239,10 +239,9 @@ public class CellularAutomaton {
 
 }
 
-/**/
-//
-	//Regla 1: Juego de la vida (2D y 3D)
 /*
+	//Regla 1: Juego de la vida (2D y 3D)
+
 	@Override
 	public int apply(Cell new_cell,Boolean isAlive, int numLiveCells) {
 		if(numLiveCells == 3 && !isAlive ){

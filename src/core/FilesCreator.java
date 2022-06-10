@@ -18,7 +18,8 @@ public class FilesCreator {
 		String auxDim = readerDim.readLine();
 		
 		int dim= (auxDim.contains("3")) ? 3 : 2;
-		
+		//int dim = 3;
+
     	boolean correctMax= false;
 		Integer[] percentages = new Integer[]{10,20,30,60,70,80};
 		for(Integer p : percentages) {
