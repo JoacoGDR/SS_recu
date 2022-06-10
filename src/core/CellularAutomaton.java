@@ -229,6 +229,8 @@ public class CellularAutomaton {
 		for(Integer p : percentages) {
 			CellularAutomaton cell = new CellularAutomaton("static" + p, "dynamic" + p);
 			System.out.println("Creating simulation");
+			//cell.solve(new Rule2());
+			//cell.solve(new Rule3());
 			cell.solve(new RuleOfLife());
 			System.out.println("Simulation done");
 			cell.getAnimationFile();
